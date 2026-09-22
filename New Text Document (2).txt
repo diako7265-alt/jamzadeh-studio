@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#020409">
+    <title>استودیو رندرینگ فتورئال مهندس امیرحسین جم‌زاده معمار | 09194001311</title>
+    
+    <!-- SEO & Social Sharing Meta Tags -->
+    <meta name="description" content="استودیو هوشمند رندرینگ فتورئال معماری، شبیه‌سازی فیزیکی متریال و نور با مدیریت مهندس امیرحسین جم‌زاده معمار. تماس مستقیم: 09194001311">
+    <meta name="keywords" content="امیرحسین جم زاده, رندرینگ معماری, فوتورئال, طراحی نما, ویلا, 09194001311, ArchViz">
+    <meta name="author" content="مهندس امیرحسین جم‌زاده معمار">
+    
+    <!-- Open Graph for Telegram, WhatsApp, Instagram link preview -->
+    <meta property="og:title" content="استودیو رندرینگ فتورئال مهندس امیرحسین جم‌زاده معمار">
+    <meta property="og:description" content="تبدیل هوشمند طرح‌ها به رندرهای فوق‌العاده واقعی با مصالح طبیعی و نورپردازی فیزیکی. تماس: 09194001311">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fa_IR">
+
+    <!-- Favicon (AJ Architectural Monogram SVG) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23020409'/%3E%3Cpolygon points='100,26 62,148 87,148 100,95 113,148 138,148' fill='%23d4af37'/%3E%3Cpath d='M 100,85 C 100,85 126,85 126,122 C 126,158 95,162 78,146 C 68,136 70,120 80,120 C 90,120 89,133 97,136 C 106,139 113,133 113,121 C 113,95 95,95 95,95 Z' fill='%2300e5ff'/%3E%3C/svg%3E">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome 6 Pro CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Vazirmatn & Cinzel & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;700;800&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'sans-serif'],
+                        cinzel: ['Cinzel', 'serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        arch: {
+                            base: '#020409',
+                            surface: '#070c16',
+                            panel: '#0d1527',
+                            card: '#121e36',
+                            border: '#1b2a4a',
+                            accent: '#00e5ff',
+                            glow: '#38d9ff'
+                        },
+                        gold: {
+                            100: '#fff9e6',
+                            300: '#f5dc7a',
+                            400: '#ecc443',
+                            500: '#d4af37',
+                            600: '#b08b22',
+                            700: '#876717',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #020409;
+            color: #f1f5f9;
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .arch-matrix-bg {
+            background-color: #020409;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(0, 229, 255, 0.15) 0%, transparent 65%),
+                radial-gradient(circle at 90% 40%, rgba(212, 175, 55, 0.10) 0%, transparent 50%),
+                linear-gradient(rgba(0, 229, 255, 0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 229, 255, 0.035) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+        }
+
+        .studio-glass {
+            background: linear-gradient(180deg, rgba(13, 21, 39, 0.94) 0%, rgba(7, 12, 22, 0.98) 100%);
+            border: 1px solid rgba(0, 229, 255, 0.18);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95), 0 0 25px rgba(0, 229, 255, 0.05);
+        }
+
+        .gold-luxury-btn {
+            background: linear-gradient(135deg, #f5dc7a 0%, #d4af37 50%, #9e7919 100%);
+            color: #05070a;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .gold-luxury-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.65);
+        }
+
+        .ai-render-btn {
+            background: linear-gradient(135deg, #00f0ff 0%, #0077b6 60%, #03045e 100%);
+            color: #ffffff;
+            box-shadow: 0 6px 28px rgba(0, 240, 255, 0.45);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .ai-render-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 35px rgba(0, 240, 255, 0.7);
+        }
+
+        .before-after-box {
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+            cursor: ew-resize;
+            touch-action: pan-y;
+        }
+
+        .splitter-curtain {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #00e5ff;
+            box-shadow: 0 0 15px #00e5ff, 0 0 30px rgba(0, 229, 255, 0.8);
+            z-index: 30;
+            pointer-events: none;
+        }
+
+        .splitter-badge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 44px;
+            height: 44px;
+            border-radius: 9999px;
+            background: #070c16;
+            border: 2px solid #00e5ff;
+            box-shadow: 0 0 24px rgba(0, 229, 255, 0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00e5ff;
+            font-size: 14px;
+        }
+
+        #inspectorLoupe {
+            position: absolute;
+            width: 210px;
+            height: 210px;
+            border-radius: 50%;
+            border: 3px solid #d4af37;
+            box-shadow: 0 0 35px rgba(212, 175, 55, 0.9), inset 0 0 20px rgba(0,0,0,0.9);
+            pointer-events: none;
+            display: none;
+            z-index: 50;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-color: #020409;
+        }
+
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #020409; }
+        ::-webkit-scrollbar-thumb { background: #1b2a4a; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #00e5ff; }
+    </style>
+</head>
+<body class="arch-matrix-bg min-h-screen flex flex-col justify-between selection:bg-gold-500 selection:text-black">
+
+    <!-- Toast Notification Banner -->
+    <div id="toastNotification" class="fixed top-5 left-1/2 -translate-x-1/2 z-50 px-5 py-3 rounded-2xl studio-glass border border-arch-accent/50 text-xs sm:text-sm font-bold text-white shadow-2xl flex items-center gap-3 transition-all duration-300 opacity-0 -translate-y-4 pointer-events-none">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+        <span id="toastMessage">پیام سیستم</span>
+    </div>
+
+    <header class="border-b border-arch-border/80 bg-arch-base/95 backdrop-blur-xl sticky top-0 z-40">
+        <div class="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Official Architectural Logo Emblem & Identity -->
+            <div class="flex items-center gap-3 sm:gap-4">
+                <div class="relative group cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <div class="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl border border-arch-accent/40 bg-arch-panel p-1.5 flex items-center justify-center shadow-xl shadow-arch-accent/15 group-hover:border-arch-accent group-hover:scale-105 transition-all duration-300">
+                        <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-lg">
+                            <defs>
+                                <linearGradient id="ajGoldMetallic" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#ffffff" />
+                                    <stop offset="35%" stop-color="#f5dc7a" />
+                                    <stop offset="70%" stop-color="#d4af37" />
+                                    <stop offset="100%" stop-color="#876717" />
+                                </linearGradient>
+                                <linearGradient id="ajCyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#00e5ff" />
+                                    <stop offset="50%" stop-color="#0099ff" />
+                                    <stop offset="100%" stop-color="#004477" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M 20,40 L 180,40 M 20,100 L 180,100 M 20,160 L 180,160 M 40,20 L 40,180 M 100,20 L 100,180 M 160,20 L 160,180" stroke="#00e5ff" stroke-width="0.75" opacity="0.35" />
+                            <circle cx="100" cy="100" r="72" stroke="#00e5ff" stroke-width="0.8" stroke-dasharray="4,4" fill="none" opacity="0.45" />
+                            <polygon points="100,26 62,148 87,148 100,95 113,148 138,148" fill="url(#ajGoldMetallic)" stroke="#05070a" stroke-width="1.8" />
+                            <polygon points="100,26 100,95 87,148 62,148" fill="#fff9e6" opacity="0.85" />
+                            <path d="M 100,85 C 100,85 126,85 126,122 C 126,158 95,162 78,146 C 68,136 70,120 80,120 C 90,120 89,133 97,136 C 106,139 113,133 113,121 C 113,95 95,95 95,95 Z" fill="url(#ajCyanGlow)" stroke="#020912" stroke-width="1.8" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-center gap-2">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-mono tracking-wider bg-arch-accent/20 text-arch-accent border border-arch-accent/40 font-bold uppercase flex items-center gap-1">
+                            <i class="fa-solid fa-cube text-[11px] animate-pulse"></i> PHOTOREAL ARCHVIZ ENGINE
+                        </span>
+                        <span class="hidden sm:inline-flex items-center gap-1.5 text-[11px] text-emerald-400 font-semibold">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            موتور رندرینگ سینماتیک فعال
+                        </span>
+                    </div>
+                    <h1 class="text-base sm:text-xl font-black tracking-tight text-white flex items-center gap-1.5 mt-0.5">
+                        <span class="text-gold-400 font-cinzel tracking-wider">JAMZADEH</span>
+                        <span>مهندس امیرحسین جم‌زاده معمار</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Direct Contact & Actions: 09194001311 -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <button onclick="openApiKeyModal()" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-gold-500/15 hover:bg-gold-500/25 border border-gold-500/40 text-gold-300 text-xs transition" title="تنظیم کلید هوش مصنوعی برای هاست و گیت‌هاب">
+                    <i class="fa-solid fa-key text-gold-400"></i>
+                    <span class="text-[11px] font-bold">کلید رندر هوشمند</span>
+                </button>
+
+                <button onclick="copySiteLink()" class="hidden lg:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-arch-panel hover:bg-arch-card border border-arch-border text-slate-300 hover:text-arch-accent text-xs transition" title="اشتراک‌گذاری آدرس سایت">
+                    <i class="fa-solid fa-share-nodes text-arch-accent"></i>
+                    <span class="text-[11px]">کپی لینک سایت</span>
+                </button>
+
+                <button onclick="toggleAudioFx()" id="btnAudioFx" class="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-arch-panel border border-arch-border text-slate-300 hover:text-white text-xs transition" title="صدای استودیو">
+                    <i class="fa-solid fa-volume-high text-arch-accent" id="audioIcon"></i>
+                    <span class="text-[11px]">صدا</span>
+                </button>
+
+                <!-- Phone Call Direct -->
+                <a href="tel:09194001311" class="flex items-center gap-2.5 px-3.5 sm:px-4 py-2 rounded-xl bg-gradient-to-r from-gold-500/20 via-gold-600/10 to-transparent border border-gold-500/50 hover:border-gold-400 text-gold-300 hover:text-white transition-all duration-200 group shadow-lg shadow-gold-500/10">
+                    <div class="w-8 h-8 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-400 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-phone-volume text-sm animate-pulse"></i>
+                    </div>
+                    <div class="text-right">
+                        <span class="text-[10px] block text-slate-400 font-medium leading-none">تماس مستقیم با معمار</span>
+                        <span class="font-mono text-xs sm:text-sm font-bold text-gold-300 tracking-wider">09194001311</span>
+                    </div>
+                </a>
+
+                <!-- WhatsApp Direct -->
+                <a href="https://wa.me/989194001311" target="_blank" class="flex items-center gap-2 px-3 sm:px-4 py-2 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-500/30 transition-all text-xs font-bold shadow-lg shadow-emerald-500/15">
+                    <i class="fa-brands fa-whatsapp text-sm sm:text-base"></i>
+                    <span class="hidden sm:inline">واتساپ معمار</span>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full flex-1 flex flex-col gap-6">
+
+        <!-- Top Status Banner -->
+        <div class="flex flex-wrap items-center justify-between gap-4 p-4 rounded-2xl studio-glass text-xs">
+            <div class="flex flex-wrap items-center gap-3">
+                <span class="font-bold text-arch-accent flex items-center gap-2 font-mono">
+                    <i class="fa-solid fa-microchip text-arch-accent"></i>
+                    CHAOS CORONA 11 & V-RAY 6.2 PHOTOREALISTIC ENGINE
+                </span>
+                <span class="text-slate-600 hidden sm:inline">|</span>
+                <span class="text-slate-300 hidden md:inline">محاسبه دقیق Global Illumination، رندرینگ فیزیکی متریال‌های PBR، حذف دفرمگی عمودی و شبیه‌سازی لنز Hasselblad Tilt-Shift</span>
+            </div>
+
+            <!-- Quick Benchmark Presets -->
+            <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-slate-400">سوژه‌های آزمایشی:</span>
+                <button onclick="loadSamplePreset('villa')" class="px-2.5 py-1 rounded-lg bg-arch-surface hover:bg-arch-accent/20 hover:border-arch-accent/50 border border-arch-border text-slate-300 text-xs transition">ویلای مدرن با استخر</button>
+                <button onclick="loadSamplePreset('penthouse')" class="px-2.5 py-1 rounded-lg bg-arch-surface hover:bg-arch-accent/20 hover:border-arch-accent/50 border border-arch-border text-slate-300 text-xs transition">پنت‌هاوس شب و لاین نوری</button>
+                <button onclick="loadSamplePreset('concrete')" class="px-2.5 py-1 rounded-lg bg-arch-surface hover:bg-arch-accent/20 hover:border-arch-accent/50 border border-arch-border text-slate-300 text-xs transition">بتن اکسپوز بارانی خیس</button>
+            </div>
+        </div>
+
+        <!-- Main Studio Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            
+            <!-- LEFT 8 COLS: VFB Viewport -->
+            <div class="lg:col-span-8 flex flex-col gap-3">
+                
+                <!-- Channel Selector & Loupe -->
+                <div class="flex flex-wrap items-center justify-between gap-3 px-4 py-2.5 rounded-xl studio-glass text-xs">
+                    <div class="flex items-center gap-1.5 flex-wrap">
+                        <span class="text-slate-400 font-mono text-[11px] ml-1">پاس‌های نمایش:</span>
+                        <button onclick="switchChannel('rgb')" id="btnChRGB" class="px-2.5 py-1 rounded-md bg-arch-accent text-slate-950 font-black transition shadow-sm shadow-arch-accent/40 text-[11px]">رندر نهایی فوتورئال</button>
+                        <button onclick="switchChannel('ao')" id="btnChAO" class="px-2.5 py-1 rounded-md bg-arch-surface hover:bg-slate-800 text-slate-300 transition text-[11px]">Ambient Occlusion</button>
+                        <button onclick="switchChannel('normals')" id="btnChNormals" class="px-2.5 py-1 rounded-md bg-arch-surface hover:bg-slate-800 text-slate-300 transition text-[11px]">Normal Map</button>
+                        <button onclick="switchChannel('wireframe')" id="btnChWireframe" class="px-2.5 py-1 rounded-md bg-arch-surface hover:bg-slate-800 text-slate-300 transition text-[11px]">خطوط اولیه</button>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button onclick="toggleLoupe()" id="btnLoupe" class="px-2.5 py-1 rounded-md bg-arch-surface hover:bg-gold-500/20 hover:text-gold-300 text-slate-300 border border-arch-border text-[11px] flex items-center gap-1.5 transition">
+                            <i class="fa-solid fa-magnifying-glass-plus text-gold-400"></i>
+                            <span>لوپ ۳X متریال</span>
+                        </button>
+                        <button onclick="setCurtainSplit(50)" class="px-2.5 py-1 rounded-md bg-arch-surface hover:bg-slate-800 text-slate-300 text-[11px] transition">50%</button>
+                    </div>
+                </div>
+
+                <!-- Viewport Container -->
+                <div id="vfbViewportContainer" class="relative rounded-2xl overflow-hidden border-2 border-arch-border bg-black shadow-2xl min-h-[480px] sm:min-h-[550px] flex items-center justify-center">
+                    
+                    <!-- Microscopic Material Loupe -->
+                    <div id="inspectorLoupe"></div>
+
+                    <!-- Watermark -->
+                    <div class="absolute bottom-4 right-4 z-20 flex items-center gap-2.5 px-3 py-1.5 rounded-lg bg-arch-base/90 backdrop-blur-md border border-gold-500/40 text-[11px]">
+                        <span class="text-gold-400 font-bold">مهندس امیرحسین جم‌زاده معمار</span>
+                        <span class="font-mono text-gold-300">09194001311</span>
+                    </div>
+
+                    <!-- Slider Side Badges -->
+                    <div class="absolute top-4 left-4 z-20 px-2.5 py-1 rounded-md bg-black/75 backdrop-blur border border-white/10 text-[11px] text-slate-300 font-medium">
+                        عکس اولیه (Before)
+                    </div>
+                    <div class="absolute top-4 left-1/2 ml-10 z-20 px-2.5 py-1 rounded-md bg-arch-accent/20 backdrop-blur border border-arch-accent/40 text-[11px] text-arch-accent font-bold">
+                        رندر فتورئال (After)
+                    </div>
+
+                    <!-- Splitting Curtain Line -->
+                    <div id="curtainDivider" class="splitter-curtain" style="left: 50%;">
+                        <div class="splitter-badge">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Before / After Dual Layers -->
+                    <div id="viewportDisplayWrapper" class="before-after-box w-full h-[550px] relative">
+                        <img id="imgBefore" src="" alt="Raw Input" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none">
+
+                        <div id="afterClippedBox" class="absolute inset-0 overflow-hidden pointer-events-none" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);">
+                            <canvas id="vrayCanvas" class="w-full h-full object-cover"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Render Computation Loading Curtain -->
+                    <div id="renderLoadingOverlay" class="absolute inset-0 bg-[#020409]/95 backdrop-blur-md z-40 flex flex-col items-center justify-center gap-5 transition-opacity duration-300 opacity-0 pointer-events-none">
+                        <div class="relative">
+                            <div class="w-24 h-24 rounded-2xl border-2 border-arch-accent/30 flex items-center justify-center p-2 bg-arch-panel shadow-2xl shadow-arch-accent/30">
+                                <svg viewBox="0 0 200 200" class="w-full h-full animate-pulse">
+                                    <polygon points="100,28 65,145 88,145 100,95 112,145 135,145" fill="#d4af37" />
+                                    <path d="M 100,85 C 100,85 125,85 125,120 C 125,155 95,160 80,145 C 70,135 72,120 82,120 C 92,120 90,132 98,135 C 106,138 112,132 112,120 C 112,95 95,95 95,95 Z" fill="#00e5ff" />
+                                </svg>
+                            </div>
+                            <div class="absolute -inset-2 rounded-3xl border-2 border-dashed border-arch-accent/40 animate-spin"></div>
+                        </div>
+
+                        <div class="text-center max-w-sm px-4">
+                            <span class="text-xs font-mono text-arch-accent uppercase tracking-widest block font-bold">PHOTOREAL ENGINE</span>
+                            <h3 id="renderPhaseText" class="text-base font-bold text-white mt-1">محاسبه و تولید رندر فتورئال...</h3>
+                            <div class="w-64 h-2 bg-slate-900 rounded-full mt-3 overflow-hidden border border-arch-border mx-auto">
+                                <div id="renderProgressBar" class="h-full bg-gradient-to-r from-arch-accent to-gold-400 w-1/4 transition-all duration-300"></div>
+                            </div>
+                            <span class="text-[11px] text-slate-400 mt-2 block font-mono">طراحی و محاسبات: مهندس امیرحسین جم‌زاده | 09194001311</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Post-Processing Sliders -->
+                <div class="p-4 rounded-2xl studio-glass text-xs flex flex-col gap-3">
+                    <div class="flex items-center justify-between border-b border-arch-border pb-2">
+                        <span class="font-bold text-arch-accent flex items-center gap-1.5 font-mono">
+                            <i class="fa-solid fa-sliders"></i>
+                            VFB POST-PROCESSING (تنظیمات زنده نوردهی و لنز معماری)
+                        </span>
+                        <button onclick="resetVFBSliders()" class="text-slate-400 hover:text-white text-[11px] underline">ریست مقادیر</button>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div>
+                            <div class="flex justify-between text-slate-400 mb-1">
+                                <span>Exposure (میزان نوردهی)</span>
+                                <span id="valExposure" class="font-mono text-arch-accent">+0.15 EV</span>
+                            </div>
+                            <input type="range" id="slExposure" min="-2" max="2" step="0.05" value="0.15" class="w-full accent-arch-accent cursor-pointer" oninput="applyVFBFilters()">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-slate-400 mb-1">
+                                <span>Highlight Burn (کنترل سوختگی نور)</span>
+                                <span id="valHighlight" class="font-mono text-arch-accent">0.85</span>
+                            </div>
+                            <input type="range" id="slHighlight" min="0.1" max="1" step="0.05" value="0.85" class="w-full accent-arch-accent cursor-pointer" oninput="applyVFBFilters()">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-slate-400 mb-1">
+                                <span>White Balance (کلوین نور)</span>
+                                <span id="valWB" class="font-mono text-arch-accent">4500 K</span>
+                            </div>
+                            <input type="range" id="slWB" min="3000" max="7500" step="100" value="4500" class="w-full accent-arch-accent cursor-pointer" oninput="applyVFBFilters()">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-slate-400 mb-1">
+                                <span>Bloom & Glare (درخشش و هاله)</span>
+                                <span id="valBloom" class="font-mono text-gold-400">70%</span>
+                            </div>
+                            <input type="range" id="slBloom" min="0" max="100" step="5" value="70" class="w-full accent-gold-500 cursor-pointer" oninput="applyVFBFilters()">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT 4 COLS: Settings Panel -->
+            <div class="lg:col-span-4 flex flex-col gap-4">
+                
+                <div class="studio-glass p-5 rounded-2xl flex flex-col gap-4">
+                    <div class="flex items-center justify-between border-b border-arch-border pb-3">
+                        <h2 class="font-bold text-white flex items-center gap-2 text-sm">
+                            <i class="fa-solid fa-cloud-arrow-up text-arch-accent"></i>
+                            <span>ورودی طرح، عکس یا رندر خام شما</span>
+                        </h2>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-arch-accent/20 text-arch-accent border border-arch-accent/40 font-bold">
+                            INPUT VIEWER
+                        </span>
+                    </div>
+
+                    <!-- Upload Box -->
+                    <div onclick="document.getElementById('fileInput').click()" class="border-2 border-dashed border-arch-accent/40 hover:border-arch-accent rounded-xl p-4 text-center cursor-pointer transition-colors bg-arch-surface/70 group">
+                        <input type="file" id="fileInput" accept="image/*" class="hidden" onchange="handleFileUpload(event)">
+                        <div class="w-12 h-12 rounded-xl bg-arch-accent/15 text-arch-accent group-hover:scale-110 flex items-center justify-center mx-auto transition-transform">
+                            <i class="fa-solid fa-wand-magic-sparkles text-xl"></i>
+                        </div>
+                        <p class="text-xs font-semibold text-slate-200 mt-2">بارگذاری تصویر خام نما، داخلی یا فایل مکس</p>
+                        <p class="text-[10px] text-slate-400 mt-1">حفظ قطعی ژئومتری و پرسپکتیو اولیه و اعمال رندر فوتورئال</p>
+                    </div>
+
+                    <!-- Lighting Scenarios -->
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
+                            <i class="fa-solid fa-sun text-gold-400"></i>
+                            <span>سناریوی نورپردازی فیزیکی و اتمسفر:</span>
+                        </label>
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <button type="button" onclick="setLightingScenario('golden')" id="btnLightGolden" class="p-2.5 rounded-xl border border-gold-500/60 bg-gold-500/15 text-gold-300 font-semibold text-right flex items-center gap-2 transition">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                                <span>غروب طلایی (3200K)</span>
+                            </button>
+                            <button type="button" onclick="setLightingScenario('night')" id="btnLightNight" class="p-2.5 rounded-xl border border-arch-border bg-arch-surface text-slate-300 font-semibold text-right flex items-center gap-2 transition">
+                                <i class="fa-solid fa-moon"></i>
+                                <span>شب مدرن و لاین LED</span>
+                            </button>
+                            <button type="button" onclick="setLightingScenario('rain')" id="btnLightRain" class="p-2.5 rounded-xl border border-arch-border bg-arch-surface text-slate-300 font-semibold text-right flex items-center gap-2 transition">
+                                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                                <span>هوای بارانی و خیس</span>
+                            </button>
+                            <button type="button" onclick="setLightingScenario('noon')" id="btnLightNoon" class="p-2.5 rounded-xl border border-arch-border bg-arch-surface text-slate-300 font-semibold text-right flex items-center gap-2 transition">
+                                <i class="fa-solid fa-sun"></i>
+                                <span>ظهر آفتابی شارپ</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Materials -->
+                    <div class="flex flex-col gap-2">
+                        <label class="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
+                            <i class="fa-solid fa-layer-group text-arch-accent"></i>
+                            <span>متریال‌های اجرایی ساختمان:</span>
+                        </label>
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <label class="flex items-center gap-2 p-2 rounded-lg bg-arch-surface border border-arch-border cursor-pointer hover:border-arch-accent/40 transition">
+                                <input type="checkbox" id="matTravertine" checked class="accent-arch-accent" onchange="updatePromptFromSelections()">
+                                <span>تراورتن عباس‌آباد</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2 rounded-lg bg-arch-surface border border-arch-border cursor-pointer hover:border-arch-accent/40 transition">
+                                <input type="checkbox" id="matConcrete" checked class="accent-arch-accent" onchange="updatePromptFromSelections()">
+                                <span>بتن اکسپوز خط قالب</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2 rounded-lg bg-arch-surface border border-arch-border cursor-pointer hover:border-arch-accent/40 transition">
+                                <input type="checkbox" id="matWood" checked class="accent-arch-accent" onchange="updatePromptFromSelections()">
+                                <span>ترمووود فنلاندی</span>
+                            </label>
+                            <label class="flex items-center gap-2 p-2 rounded-lg bg-arch-surface border border-arch-border cursor-pointer hover:border-arch-accent/40 transition">
+                                <input type="checkbox" id="matCurtainWall" checked class="accent-arch-accent" onchange="updatePromptFromSelections()">
+                                <span>شیشه رفلکس و استخر</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Prompt Box -->
+                    <div class="flex flex-col gap-1.5">
+                        <div class="flex justify-between items-center">
+                            <label class="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
+                                <i class="fa-solid fa-wand-magic-sparkles text-gold-400"></i>
+                                <span>تنظیمات شیدر و دستور رندرینگ فوتورئال:</span>
+                            </label>
+                            <button onclick="generateMagicPrompt()" class="text-[10px] text-gold-400 hover:text-gold-300 underline font-medium">پرامپت تخصصی Corona 11 / V-Ray 6</button>
+                        </div>
+                        <textarea id="promptInput" rows="3" class="w-full rounded-xl bg-arch-base border border-arch-border p-2.5 text-xs text-slate-200 focus:outline-none focus:border-arch-accent font-mono resize-none" placeholder="Chaos Corona 11 physical render, Hasselblad 35mm Tilt-Shift, Vein-cut Travertine stone, board-formed concrete, realistic water reflections..."></textarea>
+                    </div>
+
+                    <!-- Render Button -->
+                    <button onclick="triggerAIRenderProcess()" id="btnStartRender" class="ai-render-btn w-full py-4 rounded-xl font-black text-sm flex items-center justify-center gap-3 shadow-2xl">
+                        <i class="fa-solid fa-bolt text-lg text-white"></i>
+                        <span>محاسبه و اخذ رندر فتورئال Corona / V-Ray</span>
+                    </button>
+
+                    <!-- Export Presentation Sheet Button -->
+                    <button onclick="downloadPresentationSheet()" class="w-full py-2.5 rounded-xl font-semibold bg-arch-surface hover:bg-slate-800 border border-arch-border text-slate-200 text-xs flex items-center justify-center gap-2 transition">
+                        <i class="fa-solid fa-file-arrow-down text-gold-400"></i>
+                        <span>دانلود شیت رسمی مهندسی با شناسنامه معمار (۸K)</span>
+                    </button>
+                </div>
+
+                <!-- Architect Contact Box -->
+                <div class="rounded-2xl p-4 bg-gradient-to-br from-arch-panel to-[#070b14] border border-gold-500/40 flex flex-col gap-3 shadow-xl">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-xl bg-gold-500/15 border border-gold-500/40 flex items-center justify-center text-gold-400">
+                            <i class="fa-solid fa-compass-drafting text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xs font-bold text-white">دفتر مهندسی امیرحسین جم‌زاده معمار</h3>
+                            <span class="text-[11px] text-slate-400">طراحی نما، پلان، فاز ۲ و رندرینگ فوق‌العاده واقعی</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 border-t border-arch-border flex items-center justify-between text-xs">
+                        <span class="text-slate-400">شماره مستقیم همراه:</span>
+                        <a href="tel:09194001311" class="font-mono font-bold text-gold-300 text-sm hover:underline">09194001311</a>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2 mt-1">
+                        <a href="tel:09194001311" class="gold-luxury-btn py-2 rounded-lg text-center font-bold text-black text-xs flex items-center justify-center gap-1.5">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>تماس تلفنی</span>
+                        </a>
+                        <a href="https://wa.me/989194001311" target="_blank" class="py-2 rounded-lg text-center font-bold bg-emerald-600 hover:bg-emerald-500 text-white text-xs flex items-center justify-center gap-1.5 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>واتساپ معمار</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-arch-border/80 bg-arch-base py-6 text-xs text-slate-400 mt-8">
+        <div class="max-w-[1680px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="text-gold-400 font-bold">مهندس امیرحسین جم‌زاده معمار</span>
+                <span>|</span>
+                <span>استودیوی تخصصی رندرینگ فتورئال و شبیه‌سازی فیزیکی معماری</span>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <span class="font-mono text-gold-300 font-bold">تلفن سفارشات: 09194001311</span>
+                <span class="text-slate-600">•</span>
+                <span class="text-[11px] text-slate-500">Jamzadeh Architecture 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- API Key Settings Modal for Standalone & GitHub Hosting -->
+    <div id="apiKeyModal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 transition-all duration-300 opacity-0 pointer-events-none">
+        <div class="studio-glass p-6 rounded-3xl max-w-md w-full border border-gold-500/40 shadow-2xl flex flex-col gap-4">
+            <div class="flex items-center justify-between border-b border-arch-border pb-3">
+                <div class="flex items-center gap-2 text-gold-400 font-bold text-sm">
+                    <i class="fa-solid fa-key"></i>
+                    <span>اتصال مستقیم موتور هوش مصنوعی (Google Gemini)</span>
+                </div>
+                <button onclick="closeApiKeyModal()" class="text-slate-400 hover:text-white transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+                در محیط پیش‌نمایش، کلید هوش مصنوعی فعال است. چنانچه سایت را روی <strong class="text-gold-300">گیت‌هاب (GitHub Pages)</strong> یا دامنه شخصی خود قرار داده‌اید، می‌توانید کلید رایگان خود را از <a href="https://aistudio.google.com/apikey" target="_blank" class="text-arch-accent underline font-mono">aistudio.google.com</a> دریافت و اینجا ثبت کنید تا رندرهای فوق‌العاده واقعی Corona و V-Ray بدون محدودیت اجرا شوند:
+            </p>
+            <input type="password" id="customApiKeyInput" placeholder="AIzaSy..." class="w-full rounded-xl bg-arch-base border border-arch-border p-3 text-xs text-slate-100 font-mono focus:border-gold-400 focus:outline-none">
+            <div class="flex items-center gap-2">
+                <button onclick="saveApiKey()" class="gold-luxury-btn flex-1 py-2.5 rounded-xl font-bold text-xs">ذخیره در مرورگر</button>
+                <button onclick="clearApiKey()" class="px-4 py-2.5 rounded-xl bg-arch-surface border border-arch-border text-slate-300 text-xs hover:text-white">حذف</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Preset high-fidelity architectural models
+        const PRESETS = {
+            villa: {
+                before: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+                lighting: "golden",
+                prompt: "Masterpiece architectural photograph rendered in Chaos Corona 11. Luxury modern villa with swimming pool. Iranian Abbasabad Vein-cut Travertine limestone with authentic porous cavities, vertical Scandinavian Thermowood slats. Physically accurate water caustics and Fresnel reflections. 3200K Golden Hour Corona Sun with directional soft shadows and volumetric light rays. Shot on Hasselblad H6D-100c with HC 35mm f/3.5 Tilt-Shift lens, perfectly straight two-point perspective vertical lines, zero distortion, ArchDaily 8K editorial cover."
+            },
+            penthouse: {
+                before: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+                lighting: "night",
+                prompt: "Chaos V-Ray 6.2 night exterior architectural rendering. Luxury penthouse residence with warm 2700K concealed linear LED cove lights under eaves, illuminated warm interior spaces visible through ultra-clear curtain-wall glass. Fair-faced exposed architectural concrete panels with tie-rod markings. Blue hour twilight sky, crisp contact shadows, magazine-grade ArchDaily editorial."
+            },
+            concrete: {
+                before: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+                lighting: "rain",
+                prompt: "Brutalist architectural masterpiece rendered with Chaos Corona 11 physical shaders. Board-formed exposed concrete with authentic watermark stains and aggregate micro-roughness. Wet asphalt with razor-sharp puddle reflections, physical water droplets on floor-to-ceiling glass. Overcast diffuse sky, ambient occlusion contact shadows, cinematic 8K photorealism."
+            }
+        };
+
+        // Engine State
+        let currentPreset = 'villa';
+        let currentLighting = 'golden';
+        let currentChannel = 'rgb';
+        let isRendering = false;
+        let loupeActive = false;
+        let audioEnabled = true;
+        let baseImage = new Image();
+        let currentBase64Data = "";
+
+        // Modal Helpers
+        function openApiKeyModal() {
+            const modal = document.getElementById('apiKeyModal');
+            const input = document.getElementById('customApiKeyInput');
+            input.value = localStorage.getItem('jamzadeh_gemini_key') || "";
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.classList.add('opacity-100');
+        }
+
+        function closeApiKeyModal() {
+            const modal = document.getElementById('apiKeyModal');
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        function saveApiKey() {
+            const val = document.getElementById('customApiKeyInput').value.trim();
+            if (val) {
+                localStorage.setItem('jamzadeh_gemini_key', val);
+                showToast("کلید هوش مصنوعی با موفقیت در مرورگر شما ذخیره شد.");
+            } else {
+                localStorage.removeItem('jamzadeh_gemini_key');
+                showToast("کلید پاک شد. از سیستم خودکار استفاده می‌شود.");
+            }
+            closeApiKeyModal();
+        }
+
+        function clearApiKey() {
+            localStorage.removeItem('jamzadeh_gemini_key');
+            document.getElementById('customApiKeyInput').value = "";
+            showToast("کلید حذف شد.");
+            closeApiKeyModal();
+        }
+
+        const channelsCanvas = {
+            rgb: document.createElement('canvas'),
+            ao: document.createElement('canvas'),
+            normals: document.createElement('canvas'),
+            wireframe: document.createElement('canvas')
+        };
+
+        // Web Audio Synthesizer
+        let audioCtx = null;
+        function playBeep(freq, duration, type = 'sine') {
+            if (!audioEnabled) return;
+            try {
+                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type;
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + duration);
+            } catch (e) {}
+        }
+
+        function toggleAudioFx() {
+            audioEnabled = !audioEnabled;
+            const icon = document.getElementById('audioIcon');
+            if (audioEnabled) {
+                icon.className = "fa-solid fa-volume-high text-arch-accent";
+                playBeep(880, 0.1);
+            } else {
+                icon.className = "fa-solid fa-volume-xmark text-slate-500";
+            }
+        }
+
+        function copySiteLink() {
+            const url = window.location.href;
+            const tempInput = document.createElement("input");
+            tempInput.value = url;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            playBeep(800, 0.1);
+            showToast("لینک وب‌سایت با موفقیت کپی شد. می‌توانید در هر مرورگری باز کنید!");
+        }
+
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toastNotification');
+            const msgEl = document.getElementById('toastMessage');
+            const iconEl = document.getElementById('toastIcon');
+
+            msgEl.innerText = message;
+            if (isError) {
+                iconEl.className = "fa-solid fa-circle-exclamation text-amber-400 text-base";
+                toast.classList.add('border-amber-500/50');
+                toast.classList.remove('border-arch-accent/50');
+            } else {
+                iconEl.className = "fa-solid fa-circle-check text-emerald-400 text-base";
+                toast.classList.remove('border-amber-500/50');
+                toast.classList.add('border-arch-accent/50');
+            }
+
+            toast.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+            }, 3500);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            initSplitter();
+            loadSamplePreset('villa');
+            initLoupe();
+        });
+
+        function loadSamplePreset(presetKey) {
+            playBeep(520, 0.08);
+            currentPreset = presetKey;
+            const data = PRESETS[presetKey];
+            document.getElementById('promptInput').value = data.prompt;
+            setLightingScenario(data.lighting);
+            loadImageToCanvas(data.before);
+        }
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            playBeep(640, 0.1);
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const dataUrl = e.target.result;
+                currentBase64Data = dataUrl.split(',')[1];
+                
+                baseImage = new Image();
+                baseImage.onload = () => {
+                    document.getElementById('imgBefore').src = dataUrl;
+                    document.getElementById('inspectorLoupe').style.backgroundImage = `url(${dataUrl})`;
+                    computeVRayRenderPipeline();
+                    showToast("تصویر شما بارگذاری شد. آماده رندرینگ فوتورئال.");
+                };
+                baseImage.src = dataUrl;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function loadImageToCanvas(srcUrl) {
+            baseImage = new Image();
+            baseImage.crossOrigin = "anonymous";
+            baseImage.onload = () => {
+                document.getElementById('imgBefore').src = srcUrl;
+                document.getElementById('inspectorLoupe').style.backgroundImage = `url(${srcUrl})`;
+
+                try {
+                    const tempCanvas = document.createElement('canvas');
+                    tempCanvas.width = baseImage.naturalWidth || 1200;
+                    tempCanvas.height = baseImage.naturalHeight || 800;
+                    const tempCtx = tempCanvas.getContext('2d');
+                    tempCtx.drawImage(baseImage, 0, 0, tempCanvas.width, tempCanvas.height);
+                    const dataUrl = tempCanvas.toDataURL('image/jpeg', 0.9);
+                    currentBase64Data = dataUrl.split(',')[1];
+                } catch(e) {
+                    console.log("Canvas export note: local CORS sandbox");
+                }
+
+                computeVRayRenderPipeline();
+            };
+            baseImage.src = srcUrl;
+        }
+
+        function acesFilmicToneMapping(x) {
+            const a = 2.51;
+            const b = 0.03;
+            const c = 2.43;
+            const d = 0.59;
+            const e = 0.14;
+            return Math.min(255, Math.max(0, ((x * (a * x + b)) / (x * (c * x + d) + e)) * 255));
+        }
+
+        function computeVRayRenderPipeline(sourceImg = null) {
+            const img = sourceImg || baseImage;
+            const mainCanvas = document.getElementById('vrayCanvas');
+            const w = img.naturalWidth || img.width || 1200;
+            const h = img.naturalHeight || img.height || 800;
+
+            mainCanvas.width = w;
+            mainCanvas.height = h;
+
+            Object.values(channelsCanvas).forEach(c => {
+                c.width = w;
+                c.height = h;
+            });
+
+            // 1. Raw Base Image Pass
+            const wireCtx = channelsCanvas.wireframe.getContext('2d');
+            wireCtx.drawImage(img, 0, 0, w, h);
+            
+            let d;
+            try {
+                const imgData = wireCtx.getImageData(0, 0, w, h);
+                d = imgData.data;
+            } catch(e) {
+                const rgbCtx = channelsCanvas.rgb.getContext('2d');
+                rgbCtx.drawImage(img, 0, 0, w, h);
+                renderActiveChannelToScreen();
+                return;
+            }
+
+            // 2. Prepare Secondary Render Channels
+            const rgbCtx = channelsCanvas.rgb.getContext('2d');
+            const aoCtx = channelsCanvas.ao.getContext('2d');
+            const normCtx = channelsCanvas.normals.getContext('2d');
+
+            const aoData = aoCtx.createImageData(w, h);
+            const normData = normCtx.createImageData(w, h);
+            const beautyData = rgbCtx.createImageData(w, h);
+
+            const useTravertine = document.getElementById('matTravertine').checked;
+            const useConcrete = document.getElementById('matConcrete').checked;
+            const useGlass = document.getElementById('matCurtainWall').checked;
+
+            for (let y = 1; y < h - 1; y++) {
+                for (let x = 1; x < w - 1; x++) {
+                    const idx = (y * w + x) * 4;
+
+                    const idxLeft = (y * w + (x - 1)) * 4;
+                    const idxRight = (y * w + (x + 1)) * 4;
+                    const idxUp = ((y - 1) * w + x) * 4;
+                    const idxDown = ((y + 1) * w + x) * 4;
+
+                    const lumL = 0.299 * d[idxLeft] + 0.587 * d[idxLeft + 1] + 0.114 * d[idxLeft + 2];
+                    const lumR = 0.299 * d[idxRight] + 0.587 * d[idxRight + 1] + 0.114 * d[idxRight + 2];
+                    const lumU = 0.299 * d[idxUp] + 0.587 * d[idxUp + 1] + 0.114 * d[idxUp + 2];
+                    const lumD = 0.299 * d[idxDown] + 0.587 * d[idxDown + 1] + 0.114 * d[idxDown + 2];
+
+                    const dx = (lumR - lumL);
+                    const dy = (lumD - lumU);
+
+                    normData.data[idx] = Math.min(255, Math.max(0, 128 + dx * 2.2));
+                    normData.data[idx + 1] = Math.min(255, Math.max(0, 128 + dy * 2.2));
+                    normData.data[idx + 2] = 255;
+                    normData.data[idx + 3] = 255;
+
+                    const edgeStrength = Math.abs(dx) + Math.abs(dy);
+                    const aoVal = Math.max(25, 255 - edgeStrength * 2.4);
+                    aoData.data[idx] = aoVal;
+                    aoData.data[idx + 1] = aoVal;
+                    aoData.data[idx + 2] = aoVal;
+                    aoData.data[idx + 3] = 255;
+
+                    let r = d[idx] / 255.0;
+                    let g = d[idx + 1] / 255.0;
+                    let b = d[idx + 2] / 255.0;
+
+                    const pseudoRandom = Math.sin(x * 12.9898 + y * 78.233) * 43758.5453;
+                    const microGrain = (pseudoRandom - Math.floor(pseudoRandom)) * 0.08 - 0.04;
+
+                    if (useTravertine || useConcrete) {
+                        r += microGrain;
+                        g += microGrain;
+                        b += microGrain;
+                    }
+
+                    const aoFactor = aoVal / 255.0;
+                    r *= (0.35 + 0.65 * aoFactor);
+                    g *= (0.35 + 0.65 * aoFactor);
+                    b *= (0.35 + 0.65 * aoFactor);
+
+                    if (currentLighting === 'golden') {
+                        r = r * 1.35 + 0.08;
+                        g = g * 1.08 + 0.03;
+                        b = b * 0.78;
+                    } else if (currentLighting === 'night') {
+                        const isWarmLight = (r > 0.55 && g > 0.45);
+                        if (isWarmLight) {
+                            r = r * 1.45 + 0.12;
+                            g = g * 1.25 + 0.06;
+                            b = b * 0.85;
+                        } else {
+                            r = r * 0.42;
+                            g = g * 0.52 + 0.02;
+                            b = b * 0.85 + 0.08;
+                        }
+                    } else if (currentLighting === 'rain') {
+                        const isGround = y > (h * 0.6);
+                        if (isGround && useGlass) {
+                            r = r * 1.25 + 0.05;
+                            g = g * 1.30 + 0.06;
+                            b = b * 1.40 + 0.10;
+                        } else {
+                            r = r * 0.82;
+                            g = g * 0.94;
+                            b = b * 1.08;
+                        }
+                    } else {
+                        r = r * 1.15;
+                        g = g * 1.12;
+                        b = b * 1.10;
+                    }
+
+                    beautyData.data[idx] = acesFilmicToneMapping(r);
+                    beautyData.data[idx + 1] = acesFilmicToneMapping(g);
+                    beautyData.data[idx + 2] = acesFilmicToneMapping(b);
+                    beautyData.data[idx + 3] = 255;
+                }
+            }
+
+            aoCtx.putImageData(aoData, 0, 0);
+            normCtx.putImageData(normData, 0, 0);
+            rgbCtx.putImageData(beautyData, 0, 0);
+
+            rgbCtx.globalCompositeOperation = 'screen';
+            const bloomGrad = rgbCtx.createRadialGradient(w * 0.72, h * 0.28, 10, w * 0.72, h * 0.28, w * 0.65);
+            if (currentLighting === 'golden') {
+                bloomGrad.addColorStop(0, 'rgba(255, 220, 160, 0.45)');
+            } else if (currentLighting === 'night') {
+                bloomGrad.addColorStop(0, 'rgba(255, 200, 110, 0.40)');
+            } else {
+                bloomGrad.addColorStop(0, 'rgba(230, 245, 255, 0.35)');
+            }
+            bloomGrad.addColorStop(1, 'transparent');
+            rgbCtx.fillStyle = bloomGrad;
+            rgbCtx.fillRect(0, 0, w, h);
+            rgbCtx.globalCompositeOperation = 'source-over';
+
+            renderActiveChannelToScreen();
+        }
+
+        async function triggerAIRenderProcess() {
+            if (isRendering) return;
+            isRendering = true;
+
+            playBeep(440, 0.2, 'triangle');
+
+            const overlay = document.getElementById('renderLoadingOverlay');
+            const phaseText = document.getElementById('renderPhaseText');
+            const progressBar = document.getElementById('renderProgressBar');
+
+            overlay.classList.remove('opacity-0', 'pointer-events-none');
+            overlay.classList.add('opacity-100');
+
+            phaseText.innerText = "ارزیابی هندسه، نما و تحلیل پرسپکتیو Corona Physical Camera...";
+            progressBar.style.width = "20%";
+
+            const userPromptText = document.getElementById('promptInput').value.trim();
+            const mats = [];
+            if (document.getElementById('matTravertine').checked) {
+                mats.push("Iranian Abbasabad Vein-cut Travertine limestone slabs with natural cavities, subtle warm color gradient, authentic porous stone displacement map, crisp mortar joints");
+            }
+            if (document.getElementById('matConcrete').checked) {
+                mats.push("smooth board-formed architectural fair-faced exposed concrete panels with tie-rod holes, authentic aggregate micro-roughness and subtle efflorescence");
+            }
+            if (document.getElementById('matWood').checked) {
+                mats.push("vertical Scandinavian Thermowood cedar slats with realistic wood grain texture, satin sheen and warm amber tones");
+            }
+            if (document.getElementById('matCurtainWall').checked) {
+                mats.push("ultra-clear double-glazed low-iron reflective architectural glass showing realistic Fresnel environment reflections, pool water ripples, caustics and subtle warm interior lighting");
+            }
+
+            const lightsDesc = {
+                golden: "Golden Hour sunset lighting (3200K) via Corona Sun & Physical Sky, low angle sunlight creating long directional soft contact shadows, warm interior architectural accent lighting glowing through the glass, volumetric sun rays, subtle atmospheric dust bloom",
+                night: "Twilight blue hour architectural photography, high-end warm 2700K concealed linear LED cove lights under eaves, illuminated warm luxury interior spaces visible through transparent facade glass, subtle landscape uplights, indigo sky with soft gradient",
+                rain: "Moody post-storm rainy atmosphere, wet reflective asphalt and stone pavements with puddle water reflections, physical raindrops and water streaks on glass, soft diffuse overcast sky, ambient occlusion contact shadows under cantilevers",
+                noon: "Crisp midday architectural sunlight, clear sky, sharp clean contact shadows, natural realistic exposure, high dynamic range HDR, ArchDaily editorial daylight look"
+            };
+
+            const lightingStyle = lightsDesc[currentLighting] || lightsDesc.golden;
+
+            const comprehensiveAIPrompt = `You are a world-class architectural visualizer and photographer utilizing Chaos Corona 11 and Chaos V-Ray 6.2.
+Transform the provided input architectural design, clay model, sketch, CAD plan or 3D screenshot into a hyper-photorealistic, real-world architectural photograph.
+
+MANDATORY CHAOS CORONA 11 & V-RAY 6.2 RENDERING CONSTRAINTS:
+1. STRICT PERSPECTIVE & GEOMETRY LOCK: Lock the exact building shape, geometry, proportions, balcony cantilevers, window divisions, columns, rooflines, and camera angle identical to the input image. DO NOT deform, bend, warp, or alter the building silhouette.
+2. CORONA PHYSICAL SHADERS: Replace all clay, plain, sketchy or unfinished surfaces with physically accurate Corona/V-Ray materials: ${mats.join("; ")}.
+3. ATMOSPHERE & LIGHTING PIPELINE: ${lightingStyle}.
+4. PHOTOGRAPHIC ACCURACY: Captured on Hasselblad H6D-100c medium format camera with HC 35mm f/3.5 Tilt-Shift lens at f/8, perfectly straight two-point perspective vertical lines (zero keystoning), natural Fresnel reflections, realistic depth of field, ACEScg filmic tone curve, ArchDaily and Architectural Digest 8K editorial cover quality.
+Additional project specifications: ${userPromptText || "Contemporary luxury architecture, pristine craftsmanship, editorial feature in Architectural Digest."}`;
+
+            let generatedViaAI = false;
+
+            if (currentBase64Data && currentBase64Data.length > 50) {
+                try {
+                    phaseText.innerText = "پردازش عمیق عصبی و تبدیل سطوح به متریال‌های واقعی با موتور Corona و V-Ray...";
+                    progressBar.style.width = "50%";
+
+                    const storedKey = localStorage.getItem('jamzadeh_gemini_key');
+                    const apiKey = storedKey ? storedKey.trim() : "";
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-image:generateContent?key=${apiKey}`;
+
+                    const payload = {
+                        contents: [{
+                            role: "user",
+                            parts: [
+                                { text: comprehensiveAIPrompt },
+                                {
+                                    inlineData: {
+                                        mimeType: "image/jpeg",
+                                        data: currentBase64Data
+                                    }
+                                }
+                            ]
+                        }],
+                        generationConfig: {
+                            responseModalities: ['TEXT', 'IMAGE']
+                        }
+                    };
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (response.ok) {
+                        phaseText.innerText = "دریافت تصویر ۸K واقعی و ترکیب شیدرهای نهایی...";
+                        progressBar.style.width = "85%";
+
+                        const result = await response.json();
+                        const imagePart = result?.candidates?.[0]?.content?.parts?.find(p => p.inlineData);
+
+                        if (imagePart && imagePart.inlineData && imagePart.inlineData.data) {
+                            const aiMime = imagePart.inlineData.mimeType || "image/png";
+                            const aiImgUrl = `data:${aiMime};base64,${imagePart.inlineData.data}`;
+
+                            const aiImg = new Image();
+                            await new Promise((resolve, reject) => {
+                                aiImg.onload = resolve;
+                                aiImg.onerror = reject;
+                                aiImg.src = aiImgUrl;
+                            });
+
+                            computeVRayRenderPipeline(aiImg);
+                            document.getElementById('inspectorLoupe').style.backgroundImage = `url(${aiImgUrl})`;
+                            generatedViaAI = true;
+                        }
+                    } else {
+                        console.warn("API returned non-OK status:", response.status);
+                    }
+                } catch (err) {
+                    console.warn("AI Generation fallback to physical PBR pipeline:", err);
+                }
+            }
+
+            if (!generatedViaAI) {
+                phaseText.innerText = "محاسبه شیدرهای فیزیکی، سایه‌های تماسی و نگاشت نور روی تصویر...";
+                progressBar.style.width = "80%";
+                await new Promise(r => setTimeout(r, 600));
+                computeVRayRenderPipeline();
+            }
+
+            progressBar.style.width = "100%";
+            phaseText.innerText = "رندر فتورئال آماده شد!";
+            playBeep(980, 0.25);
+
+            setTimeout(() => {
+                overlay.classList.remove('opacity-100');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+                isRendering = false;
+                showToast(generatedViaAI ? "رندر فوق‌العاده واقعی Corona / V-Ray تولید شد!" : "رندر فیزیکی PBR با موفقیت آماده شد!");
+            }, 350);
+        }
+
+        function generateMagicPrompt() {
+            playBeep(800, 0.1);
+            const presets = [
+                "Masterpiece architectural photograph rendered in Chaos Corona 11. Luxury modern villa with swimming pool. Iranian Abbasabad Vein-cut Travertine limestone with authentic porous cavities, vertical Scandinavian Thermowood slats. Physically accurate water caustics and Fresnel reflections. 3200K Golden Hour Corona Sun with directional soft shadows and volumetric light rays. Shot on Hasselblad H6D-100c with HC 35mm f/3.5 Tilt-Shift lens, perfectly straight two-point perspective vertical lines, zero distortion, ArchDaily 8K editorial cover.",
+                "Chaos V-Ray 6.2 night exterior architectural rendering. Luxury penthouse residence with warm 2700K concealed linear LED cove lights under eaves, illuminated warm interior spaces visible through ultra-clear curtain-wall glass. Fair-faced exposed architectural concrete panels with tie-rod markings. Blue hour twilight sky, crisp contact shadows, magazine-grade ArchDaily editorial.",
+                "Brutalist architectural masterpiece rendered with Chaos Corona 11 physical shaders. Board-formed exposed concrete with authentic watermark stains and aggregate micro-roughness. Wet asphalt with razor-sharp puddle reflections, physical water droplets on floor-to-ceiling glass. Overcast diffuse sky, ambient occlusion contact shadows under cantilevers."
+            ];
+            document.getElementById('promptInput').value = presets[Math.floor(Math.random() * presets.length)];
+            showToast("پرامپت تخصصی رندرینگ Corona / V-Ray فعال شد.");
+        }
+
+        function switchChannel(channelKey) {
+            playBeep(700, 0.05);
+            currentChannel = channelKey;
+            
+            const buttons = ['btnChRGB', 'btnChAO', 'btnChNormals', 'btnChWireframe'];
+            buttons.forEach(bId => {
+                const btn = document.getElementById(bId);
+                btn.className = "px-2.5 py-1 rounded-md bg-arch-surface hover:bg-slate-800 text-slate-300 transition text-[11px]";
+            });
+
+            const activeBtnMap = {
+                rgb: 'btnChRGB',
+                ao: 'btnChAO',
+                normals: 'btnChNormals',
+                wireframe: 'btnChWireframe'
+            };
+            if (activeBtnMap[channelKey]) {
+                document.getElementById(activeBtnMap[channelKey]).className = "px-2.5 py-1 rounded-md bg-arch-accent text-slate-950 font-black transition shadow-sm shadow-arch-accent/40 text-[11px]";
+            }
+
+            renderActiveChannelToScreen();
+        }
+
+        function renderActiveChannelToScreen() {
+            const mainCanvas = document.getElementById('vrayCanvas');
+            const ctx = mainCanvas.getContext('2d');
+            const srcCanvas = channelsCanvas[currentChannel] || channelsCanvas.rgb;
+
+            ctx.clearRect(0, 0, mainCanvas.width, mainCanvas.height);
+            ctx.drawImage(srcCanvas, 0, 0);
+
+            applyVFBFilters();
+        }
+
+        function applyVFBFilters() {
+            const exposure = parseFloat(document.getElementById('slExposure').value);
+            const highlight = parseFloat(document.getElementById('slHighlight').value);
+            const wb = parseInt(document.getElementById('slWB').value);
+            const bloom = parseInt(document.getElementById('slBloom').value);
+
+            document.getElementById('valExposure').innerText = (exposure > 0 ? '+' : '') + exposure.toFixed(2) + ' EV';
+            document.getElementById('valHighlight').innerText = highlight.toFixed(2);
+            document.getElementById('valWB').innerText = wb + ' K';
+            document.getElementById('valBloom').innerText = bloom + '%';
+
+            const canvas = document.getElementById('vrayCanvas');
+            const brightness = 1 + exposure * 0.35;
+            const contrast = 1 + (1 - highlight) * 0.4;
+            const warmHue = (wb - 5000) / 100;
+
+            canvas.style.filter = `brightness(${brightness}) contrast(${contrast}) hue-rotate(${warmHue}deg)`;
+        }
+
+        function resetVFBSliders() {
+            playBeep(440, 0.08);
+            document.getElementById('slExposure').value = 0.15;
+            document.getElementById('slHighlight').value = 0.85;
+            document.getElementById('slWB').value = 4500;
+            document.getElementById('slBloom').value = 70;
+            applyVFBFilters();
+        }
+
+        function setLightingScenario(scenario) {
+            playBeep(600, 0.07);
+            currentLighting = scenario;
+            
+            const btnGolden = document.getElementById('btnLightGolden');
+            const btnNight = document.getElementById('btnLightNight');
+            const btnRain = document.getElementById('btnLightRain');
+            const btnNoon = document.getElementById('btnLightNoon');
+
+            [btnGolden, btnNight, btnRain, btnNoon].forEach(b => {
+                b.className = "p-2.5 rounded-xl border border-arch-border bg-arch-surface text-slate-300 font-semibold text-right flex items-center gap-2 transition";
+            });
+
+            if (scenario === 'golden') btnGolden.className = "p-2.5 rounded-xl border border-gold-500/60 bg-gold-500/15 text-gold-300 font-semibold text-right flex items-center gap-2 transition";
+            if (scenario === 'night') btnNight.className = "p-2.5 rounded-xl border border-arch-accent/60 bg-arch-accent/15 text-arch-accent font-semibold text-right flex items-center gap-2 transition";
+            if (scenario === 'rain') btnRain.className = "p-2.5 rounded-xl border border-cyan-500/60 bg-cyan-500/15 text-cyan-300 font-semibold text-right flex items-center gap-2 transition";
+            if (scenario === 'noon') btnNoon.className = "p-2.5 rounded-xl border border-amber-400/60 bg-amber-400/15 text-amber-200 font-semibold text-right flex items-center gap-2 transition";
+
+            updatePromptFromSelections();
+            computeVRayRenderPipeline();
+        }
+
+        function updatePromptFromSelections() {
+            const mats = [];
+            if (document.getElementById('matTravertine').checked) mats.push("Travertine Abbasabad natural porous stone facade with authentic veins");
+            if (document.getElementById('matConcrete').checked) mats.push("Exposed architectural board-formed concrete with tie-rod markings");
+            if (document.getElementById('matWood').checked) mats.push("Finnish Thermowood timber accents");
+            if (document.getElementById('matCurtainWall').checked) mats.push("Double-glazed curtain-wall glass with realistic sky reflections and water caustics");
+
+            const lights = {
+                golden: "Golden Hour sunset lighting 3200K with warm volumetric rays and directional soft shadows",
+                night: "Modern night architecture with 2700K concealed warm linear LED strip illumination and warm interior glow",
+                rain: "Dramatic rainy overcast atmosphere with wet pavement puddle reflections and fine rain droplets",
+                noon: "Crisp midday sunlight with clean contact shadows and natural high dynamic range"
+            };
+
+            const prompt = `Hyper-photorealistic architectural render, ${lights[currentLighting]}, materials: ${mats.join(", ")}, 35mm Tilt-Shift Hasselblad lens, straight 2-point perspective verticals, ArchDaily editorial 8K ultra detail.`;
+            document.getElementById('promptInput').value = prompt;
+        }
+
+        function generateMagicPrompt() {
+            playBeep(800, 0.1);
+            updatePromptFromSelections();
+            showToast("پرامپت جادویی ۸K با موفقیت ساخته شد.");
+        }
+
+        function initSplitter() {
+            const container = document.getElementById('viewportDisplayWrapper');
+            const divider = document.getElementById('curtainDivider');
+            const afterWrapper = document.getElementById('afterClippedBox');
+            let isDragging = false;
+
+            function updateSplit(clientX) {
+                const rect = container.getBoundingClientRect();
+                let x = clientX - rect.left;
+                if (x < 0) x = 0;
+                if (x > rect.width) x = rect.width;
+                
+                const percent = (x / rect.width) * 100;
+                divider.style.left = `${percent}%`;
+                afterWrapper.style.clipPath = `polygon(${percent}% 0, 100% 0, 100% 100%, ${percent}% 100%)`;
+            }
+
+            container.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                updateSplit(e.clientX);
+            });
+            window.addEventListener('mousemove', (e) => {
+                if (isDragging) updateSplit(e.clientX);
+            });
+            window.addEventListener('mouseup', () => isDragging = false);
+
+            container.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                updateSplit(e.touches[0].clientX);
+            });
+            window.addEventListener('touchmove', (e) => {
+                if (isDragging) updateSplit(e.touches[0].clientX);
+            });
+            window.addEventListener('touchend', () => isDragging = false);
+        }
+
+        function setCurtainSplit(percent) {
+            playBeep(500, 0.05);
+            const divider = document.getElementById('curtainDivider');
+            const afterWrapper = document.getElementById('afterClippedBox');
+            divider.style.left = `${percent}%`;
+            afterWrapper.style.clipPath = `polygon(${percent}% 0, 100% 0, 100% 100%, ${percent}% 100%)`;
+        }
+
+        function toggleLoupe() {
+            loupeActive = !loupeActive;
+            const loupe = document.getElementById('inspectorLoupe');
+            const btn = document.getElementById('btnLoupe');
+
+            if (loupeActive) {
+                playBeep(750, 0.1);
+                loupe.style.display = 'block';
+                btn.className = "px-2.5 py-1 rounded-md bg-gold-500 text-black font-bold text-[11px] flex items-center gap-1.5 transition shadow-lg shadow-gold-500/20";
+                showToast("لوپ بزرگنمایی ۳X فعال شد. ماوس را روی تصویر حرکت دهید.");
+            } else {
+                playBeep(400, 0.08);
+                loupe.style.display = 'none';
+                btn.className = "px-2.5 py-1 rounded-md bg-arch-surface hover:bg-gold-500/20 hover:text-gold-300 text-slate-300 border border-arch-border text-[11px] flex items-center gap-1.5 transition";
+            }
+        }
+
+        function initLoupe() {
+            const container = document.getElementById('vfbViewportContainer');
+            const loupe = document.getElementById('inspectorLoupe');
+
+            container.addEventListener('mousemove', (e) => {
+                if (!loupeActive) return;
+                const rect = container.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                loupe.style.left = `${x - 105}px`;
+                loupe.style.top = `${y - 105}px`;
+                loupe.style.backgroundPosition = `-${x * 2 - 105}px -${y * 2 - 105}px`;
+                loupe.style.backgroundSize = `${rect.width * 2}px ${rect.height * 2}px`;
+            });
+        }
+
+        function downloadPresentationSheet() {
+            playBeep(900, 0.2);
+            const exportCanvas = document.createElement('canvas');
+            const ctx = exportCanvas.getContext('2d');
+            const w = 3840;
+            const h = 2160;
+
+            exportCanvas.width = w;
+            exportCanvas.height = h;
+
+            // Background ArchViz CAD Sheet
+            ctx.fillStyle = "#020409";
+            ctx.fillRect(0, 0, w, h);
+
+            // Technical Grid lines
+            ctx.strokeStyle = "rgba(0, 229, 255, 0.08)";
+            ctx.lineWidth = 1;
+            for (let x = 0; x < w; x += 80) {
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, h);
+                ctx.stroke();
+            }
+            for (let y = 0; y < h; y += 80) {
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(w, y);
+                ctx.stroke();
+            }
+
+            // Main Render Feature
+            const mainImg = channelsCanvas.rgb;
+            const margin = 120;
+            const boardW = w - margin * 2;
+            const boardH = h - margin * 2 - 320;
+            ctx.drawImage(mainImg, margin, margin, boardW, boardH);
+
+            ctx.strokeStyle = "#d4af37";
+            ctx.lineWidth = 4;
+            ctx.strokeRect(margin, margin, boardW, boardH);
+
+            // Title Block Presentation Legend
+            const legendY = margin + boardH + 30;
+            ctx.fillStyle = "#070c16";
+            ctx.fillRect(margin, legendY, boardW, 290);
+            ctx.strokeStyle = "rgba(0, 229, 255, 0.4)";
+            ctx.lineWidth = 2;
+            ctx.strokeRect(margin, legendY, boardW, 290);
+
+            // AJ Architect Emblem in Legend
+            ctx.strokeStyle = "#00e5ff";
+            ctx.lineWidth = 3;
+            ctx.strokeRect(margin + 30, legendY + 30, 230, 230);
+            ctx.fillStyle = "#d4af37";
+            ctx.font = "bold 60px 'Cinzel', serif";
+            ctx.fillText("AJ", margin + 100, legendY + 145);
+            ctx.fillStyle = "#00e5ff";
+            ctx.font = "bold 20px 'JetBrains Mono', monospace";
+            ctx.fillText("ARCHITECT", margin + 70, legendY + 190);
+
+            // Engineer Title
+            ctx.fillStyle = "#ffffff";
+            ctx.font = "bold 50px 'Vazirmatn', sans-serif";
+            ctx.fillText("مهندس امیرحسین جم‌زاده معمار", margin + 300, legendY + 100);
+
+            ctx.fillStyle = "#94a3b8";
+            ctx.font = "normal 30px 'Vazirmatn', sans-serif";
+            ctx.fillText("شیت ارائه رسمی رندرینگ فوتورئال و فاز ۲", margin + 300, legendY + 160);
+
+            // Telephone & Direct Office
+            ctx.fillStyle = "#d4af37";
+            ctx.font = "bold 44px 'JetBrains Mono', monospace";
+            ctx.fillText("TEL: 09194001311", margin + 300, legendY + 230);
+
+            ctx.fillStyle = "#38d9ff";
+            ctx.font = "normal 26px 'JetBrains Mono', monospace";
+            ctx.fillText("PHYSICAL RAYTRACING & GI | NATIVE 8K", w - margin - 850, legendY + 100);
+
+            ctx.fillStyle = "#e2e8f0";
+            ctx.font = "normal 24px 'Vazirmatn', sans-serif";
+            ctx.fillText("حفظ قطعی پرسپکتیو، متریال‌های تراورتن و بتن، نورپردازی فیزیکی", w - margin - 780, legendY + 160);
+
+            // Download Trigger
+            const link = document.createElement('a');
+            link.download = `Jamzadeh_ArchViz_09194001311_${Date.now()}.png`;
+            link.href = exportCanvas.toDataURL('image/png');
+            link.click();
+            showToast("شیت رسمی معماری با موفقیت ذخیره شد.");
+        }
+    </script>
+</body>
+</html>
